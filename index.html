@@ -54,7 +54,7 @@
   <a href="/index.html" class=""> Name of Company</a>
   <nav class="flex gap-3">
     <a href="/figma.html" class="inline-block p-1">Figma</a>
-    <a href="#" class="inline-block p-1">Nav 2</a>
+    <a href="/rounded.html" class="inline-block p-1">Round</a>
     <a href="#" class="inline-block p-1">Nav 3</a>
     <a href="#" class="inline-block p-1">Nav 4</a>
   </nav>
@@ -104,8 +104,8 @@
 <!------------------------------------------------------- Text Image Section ---------------------------------------->
 <section class="container mx-auto px-8 min-h-screen flex flex-col my-20">
   <h2 class="text-6xl uppercase font-extrabold py-10">This is a <br>fun heading</h2>
-  <div class="grid md:grid-cols-2 grow gap-3">
-    <div class="py-16 self-center">
+  <div class="grid md:grid-cols-2 grow gap-4 lg:gap-10 xl:gap-20">
+    <div class="lg:py-16 self-center lg:self-start">
       <h3 class="uppercase font-bold text-2xl border-b-2 border-white mb-0 inline-block pr-36">Section Title</h3>
       <h4 class="text-sm font-normal pb-4">Subheading Description</h3>
       <p class="font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quia veritatis et aspernatur sed, quas vero distinctio tenetur voluptatibus, nihil facere voluptatem, dolor sapiente quisquam labore eaque commodi odio. Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum temporibus tempora similique. Hic, ab! Quae reprehenderit nisi quam alias deleniti sequi nihil asperiores, exercitationem fugiat perspiciatis commodi. Rem, excepturi.</p>
@@ -129,12 +129,15 @@
 <!------------------------------------------------------- Slide Gallery ---------------------------------------->
 <section>
   <div class="container mx-auto px-8">
-    <h2>Gallery</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo facere ullam enim optio itaque sint et est ut, molestiae quam eveniet eaque modi ab eius, numquam exercitationem, atque consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia perspiciatis voluptates delectus at ut minus ex laborum nihil. Nisi repellat reprehenderit vero quod aperiam praesentium similique obcaecati? Temporibus, perspiciatis modi?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo facere ullam enim optio itaque sint et est ut, molestiae quam eveniet eaque modi ab eius, numquam exercitationem, atque consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia perspiciatis voluptates delectus at ut minus ex laborum nihil. Nisi repellat reprehenderit vero quod aperiam praesentium similique obcaecati? Temporibus, perspiciatis modi?</p>
-    <button>Go To Gallery</button>
+    
+    <div class="max-w-5xl mx-auto relative pl-20">
+      <h2 class="sideways-text text-6xl uppercase font-extrabold absolute left-0 top-0">Gallery</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo facere ullam enim optio itaque sint et est ut, molestiae quam eveniet eaque modi ab eius, numquam exercitationem, atque consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia perspiciatis voluptates delectus at ut minus ex laborum nihil. Nisi repellat reprehenderit vero quod aperiam praesentium similique obcaecati? Temporibus, perspiciatis modi?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo facere ullam enim optio itaque sint et est ut, molestiae quam eveniet eaque modi ab eius, numquam exercitationem, atque consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia perspiciatis voluptates delectus at ut minus ex laborum nihil. Nisi repellat reprehenderit vero quod aperiam praesentium similique obcaecati? Temporibus, perspiciatis modi?</p>
+      <button>Go To Gallery</button>
+    </div>
   </div>
-  <div class="flex overflow-scroll">
+  <div class="flex overflow-x-auto">
     <img src="https://images.unsplash.com/photo-1680459520309-189cf5b22212?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRpd2FsaXxlbnwwfHwwfHx8Mg%3D%3D">
     <img src="https://images.unsplash.com/photo-1680459520309-189cf5b22212?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRpd2FsaXxlbnwwfHwwfHx8Mg%3D%3D">
     <img src="https://images.unsplash.com/photo-1680459520309-189cf5b22212?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRpd2FsaXxlbnwwfHwwfHx8Mg%3D%3D">
@@ -145,21 +148,21 @@
 </section>
 
 <!------------------------------------------------------- Contact Section ---------------------------------------->
-<section class="grid grid-cols-2 container mx-auto px-8"> 
+<section class="grid grid-cols-2 container mx-auto px-8 py-20"> 
   <div>
     <h2 class="text-6xl uppercase font-extrabold py-10">Contact Us.</h2>
-    <form>
+    <form class="max-w-lg">
   
-      <label class="uppercase" for="_name"> Name </label>
-      <input type="text" name="_name" id="_name" placeholder="Name" />
+      <label class="uppercase pt-4" for="_name"> Name </label>
+      <input class="w-full p-4 my-2 border-2 border-white bg-orange-950 focus:border-orange-400 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" type="text" name="_name" id="_name" placeholder="Name" />
     
       <label class="uppercase" for="_replyto"> Email </label>
-      <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
+      <input class="w-full p-4 my-2 border-2 border-white bg-orange-950 focus:border-orange-400 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" type="email" name="_replyto" id="_replyto" placeholder="Email" />
     
-      <label class="uppercase" for="message"> Message </label>
-      <textarea name="message" id="message" placeholder="Hey I want to learn to code..."></textarea>
+      <label class="uppercase pt-4" for="message"> Message </label>
+      <textarea class="w-full p-4 my-2 border-2 border-white bg-orange-950 focus:border-orange-400 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" name="message" id="message" placeholder="Hey I want to learn to code..."></textarea>
     
-      <button class="bg-white text-gray-900 px-5 py-1 text-sm uppercase" type="submit"> SUBMIT </button>
+      <button class="bg-white text-gray-900 px-5 py-1 text-sm uppercase hover:bg-orange-400 hover:text-white" type="submit"> SUBMIT </button>
       
     </form> 
   </div>
@@ -171,31 +174,37 @@
 
 <!------------------------------------------------------- Footer Section ---------------------------------------->
 
-<footer class="flex justify-between container mx-auto px-8">
-  <div>
+<footer class="grid gap-6 md:flex justify-between container mx-auto px-8 py-10 uppercase text-sm border-t-2 border-white">
+  <div class="flex gap-10">
     <div>
-      <h3>Lorem Ipsum</h3>
-      <ul>
-        <li>Dolor sit amet</li>
-        <li>Consectetur</li>
-        <li>Adipiscing elit</li>
-        <li>Sed do</li>
+      <h3 class="">Lorem Ipsum</h3>
+      <ul class="font-light space-y-1">
+        <li class="w-36"><a href="#" class="hover:text-orange-400 hover:font-bold">Dolor sit amet</a></li>
+        <li><a href="#" class="hover:text-orange-400 hover:font-bold">Consectetur</a></li>
+        <li><a href="#" class="hover:text-orange-400 hover:font-bold">Adipiscing elit</a></li>
+        <li><a href="#" class="hover:text-orange-400 hover:font-bold">ed do</a></li>
       </ul>
     </div>
     <div>
-      <h3>Lorem Ipsum</h3>
-      <ul>
-        <li>Dolor sit amet</li>
-        <li>Consectetur</li>
-        <li>Adipiscing elit</li>
-        <li>Sed do</li>
+      <h3 class="">Lorem Ipsum</h3>
+      <ul class="font-light space-y-1">
+        <li><a href="#" class="hover:text-orange-400 hover:font-bold">Dolor sit amet</a></li>
+        <li><a href="#" class="hover:text-orange-400 hover:font-bold">Consectetur</a></li>
+        <li><a href="#" class="hover:text-orange-400 hover:font-bold">Adipiscing elit</a></li>
+        <li><a href="#" class="hover:text-orange-400 hover:font-bold">ed do</a></li>
       </ul>
     </div>
   </div>
-  <div>
+  <div class="order-first md:order-none">
     <p>Subscribe to our newsletter</p>
-    <p>Input box here</p>
-    <button>Subscribe</button>
+    <form>
+        <label class="uppercase sr-only" for="_replyto"> Email </label>
+        <input class="border-2 border-white bg-orange-950 focus:border-orange-400 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30" type="email" name="_replyto" id="_replyto" placeholder="Email" />
+        <div class="">
+            <button class="bg-white text-orange-950 px-5 py-1 text-sm uppercase hover:bg-orange-400 hover:text-white my-4" type="submit">Sign Up</button>
+        </div>
+      </form> 
+    
   </div>
 </footer>
 
