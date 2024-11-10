@@ -11,6 +11,10 @@
   
   }
   
+  #fancy {
+    font-family: "Flavors", 'Lato', sans-serif;
+  }
+
   body h1, body h2, body h3, body h4 {
     margin-bottom: 1rem;
   }
