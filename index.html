@@ -9,6 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- TAILWIND -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -43,34 +46,34 @@
 
 <!-- Content of the Page -->
 
-<body class="bg-gray-900 text-white">
+<body class="bg-orange-950 text-white">
 
 <!------------------------------------------------------- Header --------------------------------------------------->
 
-<header class="uppercase font-light container mx-auto px-8 flex justify-between items-center border-b-2 border-b-white">
-  <a href="#" class=""> Name of Company</a>
-  <nav class="">
-    <a href="#" class="inline-block p-4">Nav 1</a>
-    <a href="#" class="inline-block p-4">Nav 2</a>
-    <a href="#" class="inline-block p-4">Nav 3</a>
-    <a href="#" class="inline-block p-4">Nav 4</a>
+<header class="uppercase font-light container mx-auto px-8 flex flex-col md:flex-row md:justify-between items-center border-b-2 border-b-white">
+  <a href="/index.html" class=""> Name of Company</a>
+  <nav class="flex gap-3">
+    <a href="/figma.html" class="inline-block p-1">Figma</a>
+    <a href="#" class="inline-block p-1">Nav 2</a>
+    <a href="#" class="inline-block p-1">Nav 3</a>
+    <a href="#" class="inline-block p-1">Nav 4</a>
   </nav>
 </header>
 
 <!------------------------------------------------------- Hero Banner ---------------------------------------->
 <section class="container mx-auto px-8 py-10">
-  <h1 class="text-6xl uppercase font-extrabold">This is a <br>fun heading</h1>
-  <img  class="aspect-[16/6] w-full object-cover" src="https://images.unsplash.com/photo-1605764803170-c20b43be4d00?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-  <div class="grid grid-cols-6 py-8">
-    <div class="px-3">
+  <h1 class="text-5xl lg:text-6xl uppercase font-extrabold">This is a <br>fun heading</h1>
+  <img  class="aspect-square lg:aspect-[16/6] w-full object-cover" src="https://images.unsplash.com/photo-1605764803170-c20b43be4d00?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+  <div class="grid grid-cols-3 md:grid-cols-6 gap-3 py-8">
+    <div class="">
       <h3 class="uppercase mb-0 ">Fact:</h3>
       <span class="font-bold text-4xl">900</span>
     </div>
-    <div class="px-3">
+    <div class="">
       <h3 class="uppercase mb-0 ">Fact:</h3>
       <span class="font-bold text-4xl">Y2K</span>
     </div>
-    <div class="px-3">
+    <div class="">
       <h3 class="uppercase mb-0 ">Fact:</h3>
       <span class="font-bold text-4xl">420K</span>
     </div>
@@ -87,7 +90,7 @@
     <h2 class="leading-none text-3xl font-light"><span class="font-bold uppercase text-5xl">Another</span> <br> Sick Heading for attention</h2>
     <p class="text-justify font-extralight">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quam, pariatur, voluptatem eum sapiente autem quas non, totam vitae iure fugiat nesciunt eaque corrupti! Iste sint corporis voluptates minus et! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem nemo eaque fugit totam vero iste ullam veniam cumque assumenda numquam eum eos earum, exercitationem placeat aspernatur natus possimus voluptate commodi.</p>
   </div>
-  <div class="grid grid-cols-3 gap-4 my-8">
+  <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 my-8">
     <img src="https://images.unsplash.com/photo-1666815647561-4119b29b95d3?q=80&w=3437&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="aspect-square w-full object-cover object-bottom">
     <img src="https://images.unsplash.com/photo-1635192592106-77a5aacbe1a3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGRpd2FsaSUyMGZlc3RpdmFsfGVufDB8fDB8fHwy" class="aspect-square w-full object-cover">
     <img src="https://images.unsplash.com/photo-1605194000384-439c3ced8d15?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGl3YWxpfGVufDB8fDB8fHwy" class="aspect-square w-full object-cover object-bottom">
@@ -95,29 +98,31 @@
     <img src="https://images.unsplash.com/photo-1519802772250-a52a9af0eacb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGl3YWxpfGVufDB8MHwwfHx8Mg%3D%3D" class="aspect-square w-full object-cover">
     <img src="https://images.unsplash.com/photo-1508519829430-40f7d3d161b4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGl3YWxpfGVufDB8fDB8fHwy" class="aspect-square w-full object-cover">
   </div>
-  <button class="bg-white text-gray-900 px-5 py-1 text-sm uppercase">Sign Up</button>
+  <button class="bg-white text-gray-900 px-5 py-1 text-sm uppercase">Explore</button>
 </section>
 
 <!------------------------------------------------------- Text Image Section ---------------------------------------->
 <section class="container mx-auto px-8 min-h-screen flex flex-col my-20">
   <h2 class="text-6xl uppercase font-extrabold py-10">This is a <br>fun heading</h2>
-  <div class="grid grid-cols-2 grow">
+  <div class="grid md:grid-cols-2 grow gap-3">
     <div class="py-16 self-center">
       <h3 class="uppercase font-bold text-2xl border-b-2 border-white mb-0 inline-block pr-36">Section Title</h3>
-      <h4 class="text-sm font-light pb-4">Subheading Description</h3>
-      <p class="font-extralight">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quia veritatis et aspernatur sed, quas vero distinctio tenetur voluptatibus, nihil facere voluptatem, dolor sapiente quisquam labore eaque commodi odio. Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum temporibus tempora similique. Hic, ab! Quae reprehenderit nisi quam alias deleniti sequi nihil asperiores, exercitationem fugiat perspiciatis commodi. Rem, excepturi.</p>
-      <p class="font-extralight">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quia veritatis et aspernatur sed, quas vero distinctio tenetur voluptatibus, nihil facere voluptatem, dolor sapiente quisquam labore eaque commodi odio. Voluptates. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ex a tenetur iste error consequuntur minus soluta, enim delectus laborum quo ea obcaecati, illo nostrum blanditiis adipisci dicta, in recusandae?</p>
+      <h4 class="text-sm font-normal pb-4">Subheading Description</h3>
+      <p class="font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quia veritatis et aspernatur sed, quas vero distinctio tenetur voluptatibus, nihil facere voluptatem, dolor sapiente quisquam labore eaque commodi odio. Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum temporibus tempora similique. Hic, ab! Quae reprehenderit nisi quam alias deleniti sequi nihil asperiores, exercitationem fugiat perspiciatis commodi. Rem, excepturi.</p>
+      <p class="font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quia veritatis et aspernatur sed, quas vero distinctio tenetur voluptatibus, nihil facere voluptatem, dolor sapiente quisquam labore eaque commodi odio. Voluptates. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ex a tenetur iste error consequuntur minus soluta, enim delectus laborum quo ea obcaecati, illo nostrum blanditiis adipisci dicta, in recusandae?</p>
       <button class="bg-white text-gray-900 px-5 py-1 text-sm uppercase">Sign Up</button>
     </div>
-    <div class="relative">
+    <!-- Img first in sm devices and img right in >md devices -->
+    <div class="relative order-first h-80 md:order-none md:h-full">
+      <!-- Absolute positioning has img behave like bg-image -->
       <img class="object-cover absolute top-0 left-0 w-full h-full object-bottom" src="https://images.unsplash.com/photo-1636226942649-ee15d2a7ce04?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGl3YWxpfGVufDB8fDB8fHwy">
-      <p class="absolute -right-6 bottom-0 sideways-text">Credit: some legend</p>
+      <p class="absolute -right-6 bottom-0 sideways-text font-extralight text-xs">Credit: some legend</p>
     </div>
   </div>
 </section>
 
 <!------------------------------------------------------- Featured Text ---------------------------------------->
-<section class="container mx-auto px-8 text-7xl uppercase font-extrabold  my-10 text-center">
+<section class="container mx-auto px-8 text-4xl lg:text-7xl uppercase font-extrabold  my-10 text-center">
   <p class="border-y-2 py-6 px-4">Sometimes all you need is a big random block of text to really drive home the point.</p>
 </section>
 
