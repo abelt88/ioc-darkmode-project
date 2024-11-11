@@ -11,9 +11,7 @@
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Flavors&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Flavors&family=Modak&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- TAILWIND -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -55,7 +53,7 @@
 
 <!-- Photo Relationship -->
 
-<section class="relative min-h-[80vh] flex flex-col justify-center">
+<section class="relative min-h-[90vh] flex flex-col justify-center">
   <img class="absolute inset-0 w-full h-full object-cover" src="
         https://images.unsplash.com/photo-1511974212900-b42a18e19eb8?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img">
 
@@ -69,16 +67,16 @@
           <a href="/rounded.html" class="inline-block p-1 hover:bg-focus">Round</a>
           <a href="#" class="inline-block p-1 hover:bg-focus">Nav 3</a>
       </nav>
-      <button class="border-2"> Contact Us</button>
+      <button class="border-2 rounded-full"> Contact Us</button>
     </header>
 
 <!------------------------------------------------------- Banner Section ---------------------------------------->
 
-    <div class="relative grow flex flex-col justify-center text-center">
+    <div class="relative grow flex flex-col justify-center items-center text-center">
         
-        <h1 class="text-white">This is a heading</h1>
-        <h2 class="tracking-wide"> Subheading</h2>
-        <button class="">Book Now</button>
+        <h1 class="text-white playful-font text-[9rem] max-w-xl leading-none">This is a heading</h1>
+        <h2 class="tracking-[1rem] text-4xl uppercase font-bold"> Subheading</h2>
+        <button class="bg-black text-white py-1 px-7 rounded-full">Book Now</button>
     </div>
 
 
@@ -100,14 +98,14 @@
 </section>
 
 <!------------------------------------------------------- Flipped Image Section ---------------------------------------->
-<section class="container mx-auto px-8 min-h-screen flex flex-col my-20">
-    <div class="grid md:grid-cols-2 grow gap-7">
-        <div class="relative h-80 md:h-full">
+<section class="min-h-screen flex flex-col my-20 pb-[8%] border-2">
+    <div class="grid lg:grid-cols-6 grow gap-7">
+        <div class="lg:col-span-4 row-start-1 col-start-1 lg:col-start-1">
             <!-- Absolute positioning has img behave like bg-image -->
-            <img class="object-cover absolute top-0 left-0 w-full h-full object-bottom -scale-x-100" src="https://images.unsplash.com/photo-1517519014922-8fc06b814a0e?q=80&w=2755&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img class="object-cover w-full h-full rounded-r-full opacity-80" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
           </div>
-      <div class="self-end">
-        <h2 class="uppercase font-bold text-3xl ">Duis Aute Irure</h2>
+      <div class="lg:col-span-3 row-start-1 col-start-1 lg:col-start-4 self-center p-12 relative z-10">
+        <h2 class="uppercase font-bold text-3xl text-red-700 ">Duis Aute Irure</h2>
         <p class="font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quia veritatis et aspernatur sed, quas vero distinctio tenetur voluptatibus, nihil facere voluptatem, dolor sapiente quisquam labore eaque commodi odio. Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum temporibus tempora similique. Hic, ab! Quae reprehenderit nisi quam alias deleniti sequi nihil asperiores, exercitationem fugiat perspiciatis commodi. Rem, excepturi.</p>
         <button class="bg-white text-navy px-5 py-1 text-sm uppercase hover:bg-focus hover:text-white">Contact Us</button>
       </div>
@@ -161,7 +159,7 @@
         <label class="uppercase pt-4" for="message"> Message </label>
         <textarea class="w-full p-4 my-2 border-2 border-white bg-pink-300 focus:border-orange-400 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" name="message" id="message" placeholder="Hey I want to learn to code..."></textarea>
       
-        <button class="bg-black text-whitw px-5 py-1 text-sm uppercase hover:bg-orange-400 hover:text-white" type="submit"> Send </button>
+        <button class="bg-black text-white px-5 py-1 text-sm uppercase hover:bg-orange-400 hover:text-white" type="submit"> Send </button>
         
       </form> 
     </div>
