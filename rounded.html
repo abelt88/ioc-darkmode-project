@@ -57,28 +57,40 @@
   <img class="absolute inset-0 w-full h-full object-cover" src="
         https://images.unsplash.com/photo-1511974212900-b42a18e19eb8?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img">
 
-<!------------------------------------------------------- Header --------------------------------------------------->
+  <!------------------------------------------------------- Header --------------------------------------------------->
+  <header class="relative uppercase font-light px-8 py-4  flex md:flex-row md:justify-between text-white">
+    <nav class="flex gap-3">
+      <a href="/index.html" class="inline-block p-1 rounded-full hover:bg-focus"> Logo</a>
+      <a href="/figma.html" class="hidden md:inline-block p-1 rounded-full hover:bg-focus">Figma</a>
+      <a href="/rounded.html" class="hidden md:inline-block p-1 rounded-full hover:bg-focus">Round</a>
+      <a href="#" class="hidden md:inline-block p-1 rounded-full hover:bg-focus">Nav 3</a>
+    </nav>
+    <button class="hidden md:inline-block border-2 rounded-full py-1 px-7"> Contact Us</button>
+  </header>
 
-    <header class="relative uppercase font-light container mx-auto px-8 flex flex-col md:flex-row md:justify-between text-white">
-      
-      <nav class="flex gap-3">
-        <a href="/index.html" class=""> Logo</a>
-          <a href="/figma.html" class="inline-block p-1 hover:bg-focus">Figma</a>
-          <a href="/rounded.html" class="inline-block p-1 hover:bg-focus">Round</a>
-          <a href="#" class="inline-block p-1 hover:bg-focus">Nav 3</a>
-      </nav>
-      <button class="border-2 rounded-full"> Contact Us</button>
-    </header>
+  <!------------------------------------------------------- Banner Section ---------------------------------------->
+  <div class="relative grow flex flex-col justify-center items-center text-center">
+    <h1 class="text-white playful-font text-6xl lg:text-[9rem] max-w-xl leading-none">This is a heading</h1>
+    <h2 class="tracking-widest lg:tracking-[1rem] text-3xl lg:text-4xl uppercase font-bold"> Subheading</h2>
+    <button class="bg-black text-white py-1 px-7 rounded-full">Book Now</button>
+  </div>
 
-<!------------------------------------------------------- Banner Section ---------------------------------------->
+  <!-- Swiggly Divider -->
+  <svg class="relative fill-pink-300 rotate-180 -bottom-[1px]" viewBox="0 0 100 15">
+    <polygon points="0,0 50,5 100,0" />
+    <path d="M 0,0 
+              L0,10 
+              S15,2 30,10 
+              S45,10 51,5 
+              L51,0 
+              Z" />
+      <path d="M 100,0 
+              L100,10
+              S85,2 70,10 
+              S55,10 49,5
+              L49,5 L49,0 Z" />
 
-    <div class="relative grow flex flex-col justify-center items-center text-center">
-        
-        <h1 class="text-white playful-font text-[9rem] max-w-xl leading-none">This is a heading</h1>
-        <h2 class="tracking-[1rem] text-4xl uppercase font-bold"> Subheading</h2>
-        <button class="bg-black text-white py-1 px-7 rounded-full">Book Now</button>
-    </div>
-
+  </svg>
 
 </section>
 
@@ -98,14 +110,14 @@
 </section>
 
 <!------------------------------------------------------- Flipped Image Section ---------------------------------------->
-<section class="min-h-screen flex flex-col my-20 pb-[8%] border-2">
+<section class="flex flex-col my-20 pb-[8%]">
     <div class="grid lg:grid-cols-6 grow gap-7">
         <div class="lg:col-span-4 row-start-1 col-start-1 lg:col-start-1">
             <!-- Absolute positioning has img behave like bg-image -->
-            <img class="object-cover w-full h-full rounded-r-full opacity-80" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img class="object-cover  w-full h-[80vh] rounded-r-full opacity-80" style="object-position: 50% 59%;" src="https://images.unsplash.com/photo-1506792006437-256b665541e2?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
           </div>
       <div class="lg:col-span-3 row-start-1 col-start-1 lg:col-start-4 self-center p-12 relative z-10">
-        <h2 class="uppercase font-bold text-3xl text-red-700 ">Duis Aute Irure</h2>
+        <h2 class="uppercase font-bold text-3xl">Duis Aute Irure</h2>
         <p class="font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quia veritatis et aspernatur sed, quas vero distinctio tenetur voluptatibus, nihil facere voluptatem, dolor sapiente quisquam labore eaque commodi odio. Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum temporibus tempora similique. Hic, ab! Quae reprehenderit nisi quam alias deleniti sequi nihil asperiores, exercitationem fugiat perspiciatis commodi. Rem, excepturi.</p>
         <button class="bg-white text-navy px-5 py-1 text-sm uppercase hover:bg-focus hover:text-white">Contact Us</button>
       </div>
@@ -122,7 +134,7 @@
             <img class="object-cover object-bottom rounded-t-full grow" src="https://images.unsplash.com/photo-1574745522999-64cb8347012a?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
             <p class="absolute -left-6 bottom-0 sideways-text font-extralight text-xs">Credit: some legend</p>
           </div>
-      <div class="self-end px-[7%]">
+      <div class="self-end px-[7%] pb-[15%]">
         <h3 class="uppercase font-bold text-3xl text-white">Duis Aute Irure</h3>
         <p class="font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quia veritatis et aspernatur sed, quas vero distinctio tenetur voluptatibus, nihil facere voluptatem, dolor sapiente quisquam labore eaque commodi odio. Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum temporibus tempora similique. Hic, ab! Quae reprehenderit nisi quam alias deleniti sequi nihil asperiores, exercitationem fugiat perspiciatis commodi. Rem, excepturi.</p>
         <button class="bg-white text-navy px-7 py-1 text-sm uppercase hover:bg-focus hover:text-white rounded-full">Buy Now</button>
@@ -134,7 +146,7 @@
 
 <!------------------------------------------------------- Image Display Section ---------------------------------------->
 <section class="text-center my-10">
-    <div class="grid lg:grid-cols-4 gap-4 my-8">
+    <div class="grid lg:grid-cols-4 gap-6 my-8">
       <img class="col-span-2 object-cover aspect-[2.055] w-full rounded-r-full" style="object-position: 50% 67%;" src="https://images.unsplash.com/photo-1561136962-7693005fd900?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
       <img class="object-cover aspect-square w-full rounded-full" src="https://images.unsplash.com/photo-1511974212900-b42a18e19eb8?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
       <img class="object-cover aspect-square w-full rounded-l-full" src="https://images.unsplash.com/photo-1551298698-66b830a4f11c?q=80&w=3115&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
@@ -142,25 +154,25 @@
   </section>
 
 <!------------------------------------------------------- Contact Section ---------------------------------------->
-<section class="grid grid-cols-2 py-20 bg-orange-500"> 
-    <div class="">
-        <h2 class="text-6xl uppercase font-extrabold py-10">Contact Us.</h2>
-        <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis at dolor eum numquam est facere esse, vel totam nemo ducimus ipsum quos iusto labore ullam. Ratione iste eligendi rem ducimus?</p>
+<section class="grid grid-cols-2 py-20 bg-orange-500 gap-10"> 
+    <div class="px-10 flex flex-col items-center">
+        <h2 class="tracking-widest lg:tracking-[1rem] text-2xl lg:text-2xl uppercase font-bold">Contact Us</h2>
+        <p class="max-w-[312px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis at dolor eum numquam est facere esse,</p>
     </div>
     <div>
       <form class="max-w-lg">
     
-        <label class="uppercase pt-4" for="_name"> Name </label>
-        <input class="w-full p-4 my-2 border-2 border-white bg-pink-300 focus:border-orange-400 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" type="text" name="_name" id="_name" placeholder="Name" />
+        <label class="uppercase pt-4 px-3" for="_name"> Name </label>
+        <input class="w-full mb-2 border-2 border-pink-300 rounded-2xl bg-pink-300 focus:border-orange-400 outline-none py-1 px-3 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" type="text" name="_name" id="_name" placeholder="Name" />
       
-        <label class="uppercase" for="_replyto"> Email </label>
-        <input class="w-full p-4 my-2 border-2 border-white bg-pink-300 focus:border-orange-400 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" type="email" name="_replyto" id="_replyto" placeholder="Email" />
+        <label class="uppercase px-3" for="_replyto"> Email </label>
+        <input class="w-full mb-2 border-2 border-pink-300 rounded-2xl bg-pink-300 focus:border-orange-400 outline-none py-1 px-3 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" type="email" name="_replyto" id="_replyto" placeholder="Email" />
       
-        <label class="uppercase pt-4" for="message"> Message </label>
-        <textarea class="w-full p-4 my-2 border-2 border-white bg-pink-300 focus:border-orange-400 outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" name="message" id="message" placeholder="Hey I want to learn to code..."></textarea>
-      
-        <button class="bg-black text-white px-5 py-1 text-sm uppercase hover:bg-orange-400 hover:text-white" type="submit"> Send </button>
-        
+        <label class="uppercase pt-4 px-3" for="message"> Message </label>
+        <textarea class="w-full mb-2 border-2 border-pink-300 rounded-2xl bg-pink-300 focus:border-orange-400 outline-none py-2 px-3 placeholder:text-white placeholder:opacity-30 placeholder:text-sm resize-none" name="message" id="message" placeholder="Hey I want to learn to code..." rows="6"></textarea>
+      <div class="text-right">
+        <button class="bg-black text-white px-10 py-1 text-sm uppercase hover:bg-orange-400 hover:text-white rounded-full" type="submit"> Send </button>
+      </div>
       </form> 
     </div>
   </section>
@@ -170,8 +182,8 @@
 
 <!------------------------------------------------------- Footer Section ---------------------------------------->
 
-<footer class="flex justify-around container mx-auto px-8 py-10 uppercase text-sm">
-  <div class="flex gap-10">
+<footer class="flex justify-between container mx-auto px-6 py-10 uppercase text-sm">
+  <div class="flex gap-6">
     <div>
       <h3 class="">Lorem Ipsum</h3>
       <ul class="font-light space-y-1">
@@ -193,7 +205,7 @@
     <div>
       <h3 class="">Lorem Ipsum</h3>
       <ul class="font-light space-y-1">
-        <li><a href="#" class="hover:text-byellow hover:font-bold">Dolor sit amet</a></li>
+        <li class="w-36"><a href="#" class="hover:text-byellow hover:font-bold">Dolor sit amet</a></li>
         <li><a href="#" class="hover:text-byellow hover:font-bold">Consectetur</a></li>
         <li><a href="#" class="hover:text-byellow hover:font-bold">Adipiscing elit</a></li>
         <li><a href="#" class="hover:text-byellow hover:font-bold">ed do</a></li>
@@ -202,11 +214,11 @@
   </div>
   <div>
     <p>Subscribe to our newsletter</p>
-    <form>
+    <form class="flex flex-col">
         <label class="uppercase sr-only" for="_replyto"> Email </label>
-        <input class="border-2 border-orange-500 bg-orange-500 focus:border-focus outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30" type="email" name="_replyto" id="_replyto" placeholder="Email" />
-        <div class="">
-            <button class="bg-black text-white px-5 py-1 text-sm uppercase hover:bg-focus hover:text-white my-4" type="submit">Subscribe</button>
+        <input class="rounded-2xl border-2 border-orange-500 bg-orange-500 focus:border-focus outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30" type="email" name="_replyto" id="_replyto" placeholder="Email" />
+        <div class="text-right">
+            <button class="bg-black text-white px-5 py-1 text-sm uppercase hover:bg-focus hover:text-white my-4 rounded-full" type="submit">Subscribe</button>
         </div>
       </form> 
     
